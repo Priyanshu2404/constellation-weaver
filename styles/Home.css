@@ -1,0 +1,86 @@
+/* Home.css */
+
+.home-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #000000, #555555);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.home-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0, 204, 255, 1), 0 0 10px rgba(0, 204, 255, 0.8)
+}
+
+.canvas-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ====== Add This For Form Styling ====== */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-container button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive form tweaks */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 1.5rem;
+    }
+
+    .canvas-wrapper {
+        max-width: 90%;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 1.2rem;
+    }
+
+    .form-container {
+        max-width: 95%;
+    }
+}
